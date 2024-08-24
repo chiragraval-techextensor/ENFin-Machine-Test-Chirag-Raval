@@ -47,6 +47,7 @@ const BookForm = ({ book = {}, onSave }) => {
       />
       <input
         type="number"
+        min={1}
         value={price}
         onChange={(e) => setPrice(e.target.value)}
         placeholder="Enter Price"
